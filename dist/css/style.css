@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+.nav {
+  text-align: center;
+  font-size: 1rem;
+  border-bottom: 1px solid #dee2e6;
+  padding-left: 5px;
+  padding-right: 5px;
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+}
+
+.nav-link {
+  text-decoration: none;
+  display: inline-block;
+  padding: 13px 13px;
+  color: #212529;
+  margin-right: 5px;
+}
+
+.nav-link.current {
+  border-bottom: 2px solid #1971c2;
+}
+.btn {
+  padding: 10px 20px;
+  font-size: 1rem;
+}
+@media (min-width: 768px) {
+  .nav {
+    font-size: 1.1rem;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .nav-link {
+    padding: 20px 20px;
+  }
+
+}
+
+.logo {
+  width: 120px; 
+  height: auto; 
+}
+
+@media (min-width: 640px) {
+  .logo {
+    width: 200px; 
+  }
+}
+
+@media (min-width: 768px) {
+  .logo {
+    width: 250px;
+  }
+}
+
+
+
+:root {
+    --line: rgb(255, 255, 255);
+    --line-active: black;
+}
+
+@media (max-width: 640px) {
+    :root {
+        --line: rgb(255, 255, 255);
+        --line-active: rgb(255, 255, 255);
+    }
+}
+
+a {
+    margin: 0;
+    color: var(--text);
+}
+
+.nav-link {
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    color: inherit;
+    margin: 0 var(--spacing, 0px);
+    transition: 0.25s;
+}
+
+.nav-link svg {
+    width: 100px;
+    height: 60px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -4px) translateZ(0);
+    fill: none;
+    stroke: var(--stroke,);
+    stroke-linecap: round;
+    stroke-dasharray: var(--offset, 69px) 278px;
+    stroke-dashoffset: 361px;
+    transition: stroke 0.25s ease var(--stroke-delay, 0s), stroke-dasharray 0.35s;
+    margin-top: -13px;
+}
+
+.nav-link:hover {
+    --stroke: var(--line-active);
+    --stroke-delay: 0.1s;
+    --offset: 180px;
+}
+
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+li {
+    list-style: none;
+}
+  
+
