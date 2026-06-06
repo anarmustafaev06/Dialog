@@ -418,3 +418,11 @@ body {
 
   .post-box-actions { gap: 2px; }
 }
+
+/* Footer */
+
+ body { font-family: 'Sora', sans-serif; }
+.dropdown { opacity: 0; pointer-events: none; transform: translateY(-6px); transition: opacity .18s, transform .18s; }
+.nav-item:hover .dropdown { opacity: 1; pointer-events: all; transform: translateY(0); }
+.nav-item:hover .chevron { transform: rotate(180deg); }
+.chevron { transition: transform .2s; }
