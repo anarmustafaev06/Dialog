@@ -1,0 +1,207 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+  <link href="css/Home.css" rel="stylesheet" type="text/css"/>
+  <link rel="icon" href="Images/Logo/dialoq_icon_only.png" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <title>Dialoq</title>
+</head>
+<body>
+    
+  <aside class="sidebar">
+    <a href="#" class="hidden md:block"><img src="Images/Logo/Non bag logo.png" class="logo" alt="logo"></a>
+    <a href="#" class="block md:hidden"><img src="Images/Logo/dialoq_icon_only.png" class="logo" alt="logo"></a>
+  <div class="profile-card">
+    
+  </div>
+
+    <nav class="nav flex flex-col items-start">
+      <a  href="MainPage.html" class="nav-link text-xs md:text-base flex items-center mb-2 px-4 py-2 rounded-lg hover:bg-[#efeff0] transition-colors duration-300 w-full">
+          <i class="fa-regular fa-circle-user text-xl"></i>
+          <p class="hidden md:block pl-2">Profile</p>
+      </a>
+      <a class="nav-link text-xs md:text-base flex bg-[#002760] text-white mb-2 px-4 py-2 rounded-lg transition-colors duration-300 w-full" href="#">
+          <i class="fa-solid fa-book text-xl"></i>
+          <p class="hidden md:block pl-2">Dersler</p>
+      </a>
+      <a class="nav-link text-xs md:text-base flex items-center mb-2 px-4 py-2 rounded-lg hover:bg-[#efeff0] transition-colors duration-300 w-full" href="#">
+          <i class="fa-solid fa-envelope text-xl"></i>
+          <p class="hidden md:block pl-2">Contact</p>
+      </a>
+      <a class="nav-link text-xs md:text-base flex items-center mb-2 px-4 py-2 rounded-lg hover:bg-[#efeff0] transition-colors duration-300 w-full" href="#">
+          <i class="fa-solid fa-gear text-xl"></i>
+          <p class="hidden md:block pl-2">Parametrlər</p> 
+      </a>
+      <a class="nav-link text-xs md:text-base flex items-center mb-2 px-4 py-2 rounded-lg hover:bg-[#efeff0] transition-colors duration-300 w-full" href="Home.html">
+          <i class="fa-solid fa-arrow-right-from-bracket text-xl"></i>
+          <p class="hidden md:block pl-2">Çıxış</p>
+      </a>
+      
+    </nav>
+  </aside>
+
+  <!-- MAIN FEED -->
+  <main class="feed">
+
+    <!-- TOPBAR -->
+    <header class="topbar">
+      <div class="topbar-left">
+        <i class="fa-solid fa-book text-xl"></i>
+        <span>Dersler</span>
+      </div>
+    </header>
+
+   <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+
+    <!-- Card 1: Promotion -->
+    <div class="bg-white rounded-2xl overflow-hidden border border-gray-200">
+      <a href="">
+        <!-- Thumbnail -->
+        <div class="h-40 bg-[url('Images/Lesson.png')] bg-center bg-no-repeat bg-cover flex items-center justify-center relative p-4">
+
+        </div>
+        <!-- Body -->
+        <div class="p-4">
+            <p class="text-gray-900 font-medium text-sm">Dərsliklər"</p>
+            <p class="text-gray-400 text-xs mt-0.5 mb-3">30 ferqli ders</p>
+            <div class="flex items-center justify-between">
+            
+            <span class="text-xs text-green-600 bg-green-100 px-2 py-0.5 rounded-full">Bitdi</span>
+            </div>
+        </div>
+      </a>
+    </div>
+
+    <!-- Card 2: Analytics -->
+    <div class="bg-white rounded-2xl overflow-hidden border border-gray-200">
+      <a href="">
+        <!-- Thumbnail -->
+        <div class="h-40 bg-[url('Images/Lesson.png')] bg-center bg-no-repeat bg-cover flex items-center justify-center relative p-4">
+            
+        </div>
+        <!-- Body -->
+        <div class="p-4">
+            <p class="text-gray-900 font-medium text-sm">PDF Kitablar</p>
+            <p class="text-gray-400 text-xs mt-0.5 mb-3">23 PDF kitab</p>
+            <div class="flex items-center justify-between">
+            
+            <span class="text-xs text-red-600 bg-red-100 px-2 py-0.5 rounded-full">A1–C2</span>
+            </div>
+        </div>
+      </a>
+    </div>
+
+    <!-- Card 3: Campaigns -->
+    <div class="bg-white rounded-2xl overflow-hidden border border-gray-200">
+      <a href="">
+        <!-- Thumbnail -->
+        <div class="h-40 bg-[url('Images/Lesson.png')] bg-center bg-no-repeat bg-cover flex items-center justify-center relative p-4">
+            
+        </div>
+        <!-- Body -->
+        <div class="p-4">
+            <p class="text-gray-900 font-medium text-sm">Tesler</p>
+            <p class="text-gray-400 text-xs mt-0.5 mb-3">Son giris: 2 Gun evvel</p>
+            <div class="flex items-center justify-between">
+            
+            <span class="text-xs text-blue-600 bg-blue-100 px-2 py-0.5 rounded-full">Davam edir</span>
+            </div>
+        </div>
+      </a>
+    </div>
+
+  </div>
+
+  <!-- RIGHT SIDEBAR -->
+  <aside class="right-sidebar">
+    <div class="bg-white rounded-2xl border border-gray-200 p-4 flex items-center gap-3">
+        <img src="../dist/Images/Profile/Visa pic - Makhmudov T Visa pic.jpg" alt="profil" class="w-12 h-12 rounded-full object-cover" />
+        <div>
+            <p class="text-gray-900 font-medium text-sm">Tahir Maxmudov</p>
+            <p class="text-gray-400 text-xs">Gurcu dili oyrenir</p>
+        </div>
+    </div>
+
+    <!-- Dil Səviyyəsi -->
+    <div class="bg-white rounded-2xl border border-gray-200 p-4">
+        <p class="text-gray-500 text-xs font-medium mb-3 uppercase tracking-wide">Dil Səviyyəsi</p>
+        <div class="flex items-center justify-between mb-2">
+            <span class="text-gray-900 text-sm font-medium">Gurcu dili</span>
+            <span class="text-xs font-semibold bg-indigo-100 text-indigo-600 px-2 py-0.5 rounded-full">B1</span>
+        </div>
+        <div class="w-full bg-gray-100 rounded-full h-2 mb-3">
+            <div class="bg-indigo-500 h-2 rounded-full" style="width: 55%"></div>
+        </div>
+        <div class="flex justify-between text-xs text-gray-400">
+            <span>A1</span><span>A2</span><span class="text-indigo-500 font-medium">B1</span><span>B2</span><span>C1</span><span>C2</span>
+        </div>
+    </div>
+
+    <!-- Bitirilmiş Dərslər -->
+    <div class="bg-white rounded-2xl border border-gray-200 p-4">
+        <p class="text-gray-500 text-xs font-medium mb-3 uppercase tracking-wide">Bitirilmiş Dərslər</p>
+        <div class="flex items-center gap-3 mb-2">
+            <div class="flex-1 bg-gray-100 rounded-full h-2">
+                <div class="bg-emerald-500 h-2 rounded-full" style="width: 72%"></div>
+            </div>
+            <span class="text-sm font-semibold text-gray-900">72%</span>
+        </div>
+        <p class="text-xs text-gray-400">18 dərs tamamlandı / 25 dərs</p>
+    </div>
+
+    <!-- Test Nəticələri -->
+    <div class="bg-white rounded-2xl border border-gray-200 p-4">
+        <p class="text-gray-500 text-xs font-medium mb-3 uppercase tracking-wide">Test Nəticələri</p>
+        <div class="flex flex-col gap-2">
+            <div class="flex items-center gap-3">
+                <span class="text-xs text-gray-500 w-20 shrink-0">Qrammatika</span>
+                <div class="flex-1 bg-gray-100 rounded-full h-1.5">
+                    <div class="bg-blue-500 h-1.5 rounded-full" style="width: 85%"></div>
+                </div>
+                <span class="text-xs font-medium text-gray-900">85%</span>
+            </div>
+            <div class="flex items-center gap-3">
+                <span class="text-xs text-gray-500 w-20 shrink-0">Dinləmə</span>
+                <div class="flex-1 bg-gray-100 rounded-full h-1.5">
+                    <div class="bg-blue-500 h-1.5 rounded-full" style="width: 60%"></div>
+                </div>
+                <span class="text-xs font-medium text-gray-900">60%</span>
+            </div>
+            <div class="flex items-center gap-3">
+                <span class="text-xs text-gray-500 w-20 shrink-0">Oxuma</span>
+                <div class="flex-1 bg-gray-100 rounded-full h-1.5">
+                    <div class="bg-blue-500 h-1.5 rounded-full" style="width: 78%"></div>
+                </div>
+                <span class="text-xs font-medium text-gray-900">78%</span>
+            </div>
+            <div class="flex items-center gap-3">
+                <span class="text-xs text-gray-500 w-20 shrink-0">Yazma</span>
+                <div class="flex-1 bg-gray-100 rounded-full h-1.5">
+                    <div class="bg-blue-500 h-1.5 rounded-full" style="width: 50%"></div>
+                </div>
+                <span class="text-xs font-medium text-gray-900">50%</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Gündəlik Söz (bonus) -->
+    <div class="bg-indigo-50 rounded-2xl border border-indigo-100 p-4">
+        <p class="text-indigo-400 text-xs font-medium mb-2 uppercase tracking-wide">Günün Sözü</p>
+        <p class="text-indigo-700 text-lg font-semibold">მონდომება</p>
+        <p class="text-indigo-500 text-xs mb-1">/Mondomeba/</p>
+        <p class="text-gray-600 text-xs">Bir işi istəklə, əzmlə və həvəslə davam etdirmək.</p>
+    </div>
+
+    
+  </aside>
+
+
+
+  <script src="js/script.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+</body>
+</html>
