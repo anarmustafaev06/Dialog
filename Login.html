@@ -1,0 +1,130 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="./output.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet" type="text/css"/>
+<link rel="icon" href="Images/Logo/dialoq_icon_only.png" type="image/x-icon">
+<link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css" />
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<title>Dialoq · Daxil ol</title>
+</head>
+<body class="min-h-screen">
+
+<div class="min-h-screen flex flex-col lg:flex-row">
+
+  <!-- LEFT — BRAND PANEL -->
+  <div class="hidden lg:flex lg:w-1/2 bg-[#002760] flex-col justify-between p-12 relative overflow-hidden">
+    <div class="absolute -right-24 -top-24 w-96 h-96 rounded-full bg-white/5"></div>
+    <div class="absolute -left-16 bottom-0 w-72 h-72 rounded-full bg-white/5"></div>
+
+    <a href="Home.html" class="relative z-10">
+      <img src="Images/Logo/Non bag logo.png" class="w-40" alt="Dialoq logo">
+    </a>
+
+    <div class="relative z-10">
+      <p style="font-family: 'Patrick Hand', cursive;" class="text-3xl text-white leading-snug mb-6">
+        “To learn a language is to have one more window from which to look at the world.”
+      </p>
+      <p class="text-white/60 text-sm">— Chinese proverb</p>
+    </div>
+
+    <div class="relative z-10 flex items-center gap-8 text-white/70 text-sm">
+      <div>
+        <p class="text-2xl font-bold text-white">30+</p>
+        <p class="text-xs uppercase tracking-wide">Dərs</p>
+      </div>
+      <div>
+        <p class="text-2xl font-bold text-white">23</p>
+        <p class="text-xs uppercase tracking-wide">PDF kitab</p>
+      </div>
+      <div>
+        <p class="text-2xl font-bold text-white">A1–C2</p>
+        <p class="text-xs uppercase tracking-wide">Səviyyələr</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- RIGHT — FORM -->
+  <div class="flex-1 flex items-center justify-center px-6 py-12 sm:px-10">
+    <div class="w-full max-w-sm">
+
+      <a href="Home.html" class="lg:hidden flex justify-center mb-8">
+        <img src="Images/Logo/Non bag logo.png" class="w-36" alt="Dialoq logo">
+      </a>
+
+      <h1 class="text-2xl font-bold text-gray-900 mb-1">Xoş gəldiniz</h1>
+      <p class="text-gray-400 text-sm mb-8">Hesabınıza daxil olun və öyrənməyə davam edin.</p>
+
+      <form id="loginForm" class="space-y-4">
+        <label class="block">
+          <span class="text-xs font-medium text-gray-500">E-poçt</span>
+          <input type="email" required placeholder="ornek@mail.com" class="mt-1.5 w-full rounded-lg border border-gray-200 px-3.5 py-2.5 text-sm text-gray-900 focus:outline-none focus:ring-2 focus:ring-[#002760]/20 focus:border-[#002760]">
+        </label>
+
+        <label class="block">
+          <span class="text-xs font-medium text-gray-500">Şifrə</span>
+          <div class="relative mt-1.5">
+            <input id="loginPassword" type="password" required placeholder="••••••••" class="w-full rounded-lg border border-gray-200 px-3.5 py-2.5 pr-10 text-sm text-gray-900 focus:outline-none focus:ring-2 focus:ring-[#002760]/20 focus:border-[#002760]">
+            <button type="button" onclick="togglePassword('loginPassword', this)" class="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 hover:text-gray-600">
+              <i class="ti ti-eye text-lg"></i>
+            </button>
+          </div>
+        </label>
+
+        <div class="flex items-center justify-between text-sm">
+          <label class="flex items-center gap-2 text-gray-500 cursor-pointer">
+            <input type="checkbox" class="rounded border-gray-300 text-[#002760] focus:ring-[#002760]/30">
+            Yadda saxla
+          </label>
+          <a href="#" class="text-[#002760] font-medium hover:underline">Şifrəni unutmusan?</a>
+        </div>
+
+        <button type="submit" class="w-full py-2.5 text-sm font-semibold rounded-lg bg-[#002760] text-white hover:bg-[#001c47] transition-colors duration-300">
+          Daxil ol
+        </button>
+      </form>
+
+      <div class="flex items-center gap-3 my-6">
+        <div class="flex-1 h-px bg-gray-200"></div>
+        <span class="text-xs text-gray-400">və ya</span>
+        <div class="flex-1 h-px bg-gray-200"></div>
+      </div>
+
+      <button type="button" class="w-full flex items-center justify-center gap-2 py-2.5 text-sm font-medium rounded-lg border border-gray-200 text-gray-700 hover:bg-gray-50 transition-colors duration-300">
+        <i class="ti ti-brand-google text-lg"></i>
+        Google ilə davam et
+      </button>
+
+      <p class="text-center text-sm text-gray-500 mt-8">
+        Hesabınız yoxdur?
+        <a href="SignUp.html" class="text-[#002760] font-semibold hover:underline">Qeydiyyatdan keç</a>
+      </p>
+    </div>
+  </div>
+
+</div>
+
+<script src="js/script.js"></script>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  function togglePassword(inputId, btn) {
+    const input = document.getElementById(inputId);
+    const icon = btn.querySelector('i');
+    const show = input.type === 'password';
+    input.type = show ? 'text' : 'password';
+    icon.className = show ? 'ti ti-eye-off text-lg' : 'ti ti-eye text-lg';
+  }
+
+  document.getElementById('loginForm').addEventListener('submit', function (e) {
+    e.preventDefault();
+    // NOT: hazırda backend bağlantısı yoxdur — bura sizin login API çağırışınız əlavə olunmalıdır.
+    // Uğurlu girişdən sonra istifadəçini MainPage.html-ə yönləndirmək üçün:
+    // window.location.href = 'MainPage.html';
+    alert('Giriş formu hələ backend-ə bağlanmayıb.');
+  });
+</script>
+</body>
+</html>
